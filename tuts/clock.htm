@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+
+<body>
+    <div id="time" style="font-size: 40px; text-align:center; background-color:rgb(160, 203, 241)">
+    </div>
+
+
+    <script>
+        setInterval(() => {
+            let d = new Date();
+            document.getElementById('time').innerText = d;
+        }, 1000)
+        var audio = new Audio('Aaoge Jab Tum.mp3');
+        audio.play();
+
+    </script>
+</body>
+
+</html>
